@@ -1,8 +1,12 @@
+@font-face {
+  font-family: "Mikado";
+  src: url('Mikado.otf')
+}
 body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
-  height: 200vh;
+  height: 300vh;
 }
 ::-webkit-scrollbar {
   width: 7px;
@@ -11,7 +15,7 @@ body {
   display: none;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #0BF;
+  background-color: #fff;
 }
 ::-webkit-scrollbar-thumb:hover {
   background-color: #1cc2ff;
@@ -22,16 +26,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
   background-image: linear-gradient(to bottom right, #0BF, #00ffa9);
 }
-.others {
-  width: 100vw;
+.middle {
   height: 100vh;
-  box-shadow: 0px 0px 5px 3px gray;
-  background-color: white;
-  position: absolute;
-  top: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom left, #00ffa9, #0BF);
 }
 .outerCircle {
   width: 500px;
@@ -41,11 +44,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 0px 5px 3px #ddd;
+  box-shadow: 0px 0px 5px 3px #fff;
   transition: 0.4s;
   background-color: #0BF;
   z-index: 1;
   background-image: linear-gradient(to bottom right, #00ffa9, #0BF);
+}
+.outerCircle:hover {
+  cursor: pointer;
 }
 .innerCircle {
   width: 450px;
@@ -60,9 +66,11 @@ body {
 }
 .title {
   text-align: center;
-  font-size: 50px;
-  font-family: 'Press Start 2P';
+  font-size: 69px;
+  font-family: 'Mikado';
   line-height: 80px;
   letter-spacing: 4px;
   color: #aaa;
+  transition: 0.4s;
+  user-select: none;
 }
