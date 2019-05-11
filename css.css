@@ -2,6 +2,11 @@
   font-family: "Mikado";
   src: url('Mikado.otf')
 }
+@font-face {
+  font-family: "Ubuntu";
+  src: url('Ubuntu.ttf')
+}
+
 body {
   overflow-x: hidden;
   margin: 0;
@@ -73,4 +78,45 @@ body {
   color: #aaa;
   transition: 0.4s;
   user-select: none;
+}
+.middleContainer {
+  width: 80vw;
+  height: 80vh;
+}
+.middleStrip {
+  width: 100%;
+  height: calc(100%/3);
+}
+.box {
+  height: 100%;
+  width: calc(80vh/3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}
+
+.boxBorder {
+  width: 85%;
+  height: 85%;
+  border-radius: 15%;
+  background-color: white;
+  /* background-image: linear-gradient(to bottom left, #0BF, #00ffa9); */
+  /* box-shadow: 0px 0px 5px 3px #fff; */
+}
+.middleTextContainer {
+  /* display: inline-block; */
+  float: right;
+  height: 100%;
+  line-height: 100%;
+  width: calc(100% - 80vh/3);
+  display: flex;
+  align-items: center; /* align vertical */
+}
+.middleText {
+  text-align: left;
+  margin-left: 40px;
+  font-size: 30px;
+  font-family: "Ubuntu";
+  color: white;
 }
