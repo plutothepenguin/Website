@@ -6,10 +6,6 @@
   font-family: "Ubuntu";
   src: url('Ubuntu.ttf')
 }
-@font-face {
-  font-family: "Ubuntu Bold";
-  src: url('Ubuntu-B.ttf')
-}
 
 body {
   overflow-x: hidden;
@@ -142,7 +138,8 @@ body {
   text-align: left;
   margin-left: 40px;
   font-size: 30px;
-  font-family: "Ubuntu Bold";
+  font-family: "Ubuntu";
+  font-weight: bold;
   color: white;
 }
 .middleText {
