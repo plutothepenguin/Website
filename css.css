@@ -34,7 +34,7 @@ body {
   background-image: linear-gradient(to bottom right, #0BF, #00ffa9);
 }
 .middle {
-  height: 100vh;
+  height: 120vh;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -88,27 +88,36 @@ body {
   user-select: none;
 }
 .middleContainer {
+  top: 1000px;
   width: 80vw;
-  height: 80vh;
-
+  height: 120vh;
+  /* margin-top: 30%; */
 }
 .middleStrip {
   width: 100%;
-  height: calc(100%/3);
+  height: calc((100%/5)*2.4);
   transition: 1s;
 }
 .box {
   height: 100%;
-  width: calc(80vh/3);
+  width: calc((120vh/5)*2.4);
   display: flex;
   justify-content: center;
   align-items: center;
   float: left;
 }
-
+/* .floatLeft {
+  float: left !important;
+}
+.floatRight {
+  float: right !important;
+}
+.textRight {
+  text-align: right !important;
+} */
 .boxBorder {
-  width: 85%;
-  height: 85%;
+  width: 80%;
+  height: 80%;
   border-radius: 20%;
   background-color: #fff;
   display: flex;
@@ -126,7 +135,7 @@ body {
   float: right;
   height: 100%;
   line-height: 100%;
-  width: calc(100% - 80vh/3);
+  width: calc(100% - 120vh/5*2.4);
   display: flex;
   align-items: center;
   justify-content: space-between;

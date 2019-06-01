@@ -1,4 +1,5 @@
 $('.middleStrip').css('margin-left', '-100vw');
+$('.middleContainer .middleStrip:nth-child(2)').css('margin-left', '100vw');
 $('.outerCircle').mouseover(function() {
   $('.outerCircle').css({'width': '505px','height': '505px','box-shadow': '0px 0px 20px 10px #fff'});
   $('.innerCircle').css({'width': '455px','height': '455px'});
@@ -32,13 +33,13 @@ let scrollTop = 0;
 $(window).scroll(function(){
   // console.log($(window).scrollTop());
   scrollTop = $(window).scrollTop();
-  if (scrollTop > $(window).height()/9*8) {
+  if (scrollTop > $(window).height()/100*140) {
     moveStrip(0,0,0);
   }
-  else if (scrollTop > $(window).height()/9*5) {
+  else if (scrollTop > $(window).height()/100*90) {
     moveStrip(100,0,0)
   }
-  else if (scrollTop > $(window).height()/9*2) {
+  else if (scrollTop > $(window).height()/100*35) {
     moveStrip(100,100,0)
   }
   else {
@@ -47,6 +48,6 @@ $(window).scroll(function(){
 });
 function moveStrip(x,y,z) {
   $('.middleContainer .middleStrip:nth-child(3)').css('margin-left', '-' + x + 'vw');
-  $('.middleContainer .middleStrip:nth-child(2)').css('margin-left', '-' + y + 'vw');
+  $('.middleContainer .middleStrip:nth-child(2)').css('margin-left', y + 'vw');
   $('.middleContainer .middleStrip:nth-child(1)').css('margin-left', '-' + z + 'vw');
 }
