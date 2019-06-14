@@ -1,0 +1,225 @@
+.penguin {
+  width: 250px;
+  height: 450px;
+  background-color: white;
+  margin-left: 100px;
+}
+
+.head {
+  width: 250px;
+  height: 250px;
+  background-color: #162836;
+  border-radius: 250px;
+  position: absolute;
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+  border-left: 3px solid black;
+}
+.torso {
+  width: 250px;
+  height: 275px;
+  margin-top: 125px;
+  background-color: #162836;
+  position: absolute;
+  border-right: 3px solid black;
+  border-left: 3px solid black;
+}
+
+.whitebelly {
+  width: 150px;
+  height: 275px;
+  margin-top: 125px;
+  background-color: white;
+  position: absolute;
+  z-index: 2;
+  border-right: 3px solid black;
+  border-left: 3px solid black;
+}
+.whitehead {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-right: 3px solid black;
+  border-left: 3px solid black;
+  border-top: 3px solid black;
+  position: absolute;
+  top: 50px;
+  z-index: 2;
+}
+/* .whitebutt {
+  width: 250px;
+  height: 55px;
+  top: 405px;
+  border-radius: 100%;
+  position: absolute;
+  background: linear-gradient(to right, white 80%, #162836 30%);
+  z-index: 2;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  border-right: 3px solid black;
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
+
+} */
+.whitecurveleft {
+  width: 55px;
+  height: 50px;
+  position: absolute;
+  top: 403px;
+  left: 261px;
+  z-index: 3;
+  border-bottom-left-radius: 100%;
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
+  background-color: #162836;
+}
+.whitecurveleftleft {
+  width: 55px;
+  height: 50px;
+  position: absolute;
+  top: 403px;
+  left: 108px;
+  z-index: 2;
+  border-bottom-left-radius: 100%;
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
+  background-color: white;
+}
+.whitecurveright {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 403px;
+  left: 311px;
+  z-index: 2;
+  border-bottom-right-radius: 100%;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  background-color: #162836;
+}
+.butt {
+  border-bottom: 3px solid black;
+  width: 150px;
+  height: 50px;
+  top: 403px;
+  left: 165px;
+  position: absolute;
+  z-index: 2;
+
+}
+.lefteye {
+  width: 45px;
+  height: 45px;
+  border-radius: 25px;
+  background-color: black;
+  position: absolute;
+  z-index: 3;
+  top: 100px;
+  left: 100px;
+}
+.righteye {
+  width: 45px;
+  height: 45px;
+  border-radius: 25px;
+  background-color: black;
+  position: absolute;
+  z-index: 3;
+  top: 100px;
+  left: 190px;
+
+}
+.pupil {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: white;
+  margin-top: 7px;
+  margin-left: 7px;
+}
+.leftarm {
+  width: 200px;
+  height: 55px;
+  background-color: #162836;
+  position: absolute;
+  z-index: 0;
+  top: 220px;
+  left: 10px;
+  transform: rotate(-55deg);
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 30%;
+  border: 3px solid black;
+}
+.rightarm {
+  width: 150px;
+  height: 60px;
+  background-color: #162836;
+  position: absolute;
+  z-index: 3;
+  top: 250px;
+  left: 190px;
+  transform: rotate(-55deg);
+  border-bottom-right-radius: 30%;
+  border-bottom-left-radius: 70%;
+  border-top-left-radius: 30%;
+  border: 3px solid black;
+  border-right: 0;
+}
+.nosetop {
+  display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0 13.0px 90.0px;
+	border-color: transparent transparent rgb(238,198,22) transparent;
+  position: absolute;
+  top: 130px;
+  left: 70px;
+  z-index: 5;
+}
+.line {
+  width: 90px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  top: 143px;
+  left: 70px;
+  z-index: 6;
+}
+.nosebottom {
+  display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 90.0px 12.0px 0;
+	border-color: transparent rgb(159,142,58) transparent transparent;
+  position: absolute;
+  top: 143px;
+  left: 70px;
+  z-index: 5;
+}
+.noseshadow {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15.5px 96.0px 15.5px 0;
+  border-color: transparent rgb(0,0,0) transparent transparent;
+  position: absolute;
+  top: 127px;
+  left: 67px;
+  z-index: 4;
+}
+/* .whitecurveright {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 403px;
+  left: 311px;
+  z-index: 2;
+  border-bottom-right-radius: 90%;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  background-color: #162836;
+} */
