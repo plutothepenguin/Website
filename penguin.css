@@ -1,8 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
 .penguin {
   width: 250px;
   height: 450px;
   background-color: white;
+  margin: 0;
+  padding: 0;
   margin-left: 50px;
+  position: relative;
 }
 
 .head {
@@ -67,8 +79,8 @@
   width: 55px;
   height: 50px;
   position: absolute;
-  top: 403px;
-  left: 211px;
+  top: 400px;
+  left: 153px;
   z-index: 3;
   border-bottom-left-radius: 100%;
   border-left: 3px solid black;
@@ -79,8 +91,7 @@
   width: 55px;
   height: 50px;
   position: absolute;
-  top: 403px;
-  left: 58px;
+  top: 400px;
   z-index: 2;
   border-bottom-left-radius: 100%;
   border-left: 3px solid black;
@@ -91,8 +102,8 @@
   width: 50px;
   height: 50px;
   position: absolute;
-  top: 403px;
-  left: 261px;
+  top: 400px;
+  left: 203px;
   z-index: 2;
   border-bottom-right-radius: 100%;
   border-right: 3px solid black;
@@ -103,8 +114,8 @@
   border-bottom: 3px solid black;
   width: 150px;
   height: 50px;
-  top: 403px;
-  left: 115px;
+  top: 400px;
+  left: 55px;
   position: absolute;
   z-index: 2;
 
@@ -117,7 +128,7 @@
   position: absolute;
   z-index: 3;
   top: 100px;
-  left: 50px;
+  left: -10px;
 }
 .righteye {
   width: 45px;
@@ -125,9 +136,9 @@
   border-radius: 25px;
   background-color: black;
   position: absolute;
-  z-index: 3;
+  z-index: 4;
   top: 100px;
-  left: 140px;
+  left: 80px;
 
 }
 .pupil {
@@ -145,7 +156,7 @@
   position: absolute;
   z-index: 0;
   top: 220px;
-  left: -40px;
+  left: -100px;
   transform: rotate(-55deg);
   border-top-left-radius: 100%;
   border-bottom-left-radius: 30%;
@@ -158,7 +169,7 @@
   position: absolute;
   z-index: 3;
   top: 250px;
-  left: 140px;
+  left: 90px;
   transform: rotate(-55deg);
   border-bottom-right-radius: 30%;
   border-bottom-left-radius: 70%;
@@ -175,7 +186,7 @@
 	border-color: transparent transparent rgb(238,198,22) transparent;
   position: absolute;
   top: 130px;
-  left: 20px;
+  left: -40px;
   z-index: 5;
 }
 .line {
@@ -184,7 +195,7 @@
   background-color: black;
   position: absolute;
   top: 143px;
-  left: 20px;
+  left: -40px;
   z-index: 6;
 }
 .nosebottom {
@@ -196,7 +207,7 @@
 	border-color: transparent rgb(159,142,58) transparent transparent;
   position: absolute;
   top: 143px;
-  left: 20px;
+  left: -40px;
   z-index: 5;
 }
 .noseshadow {
@@ -208,7 +219,7 @@
   border-color: transparent rgb(0,0,0) transparent transparent;
   position: absolute;
   top: 127px;
-  left: 17px;
+  left: -43px;
   z-index: 4;
 }
 /* .whitecurveright {
