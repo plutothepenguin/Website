@@ -1,17 +1,22 @@
 @font-face {
-  font-family: "Mikado";
-  src: url('Mikado.otf')
+  font-family: "Metropolis";
+  src: url('Metropolis.otf')
 }
 @font-face {
   font-family: "Ubuntu";
   src: url('Ubuntu.ttf')
 }
-
+@media only screen and (max-width: 760px) {
+  .title {
+    font-size: 90px;
+  }
+}
 body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
-  height: 300vh;
+  height: 400vh;
+  background-color: #111;
 }
 ::-webkit-scrollbar {
   width: 7px;
@@ -31,24 +36,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to bottom right, #0BF, #00ffa9);
 }
 .middle {
-  height: 120vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to bottom left, #00ffa9, #0BF);
 }
-.bottom {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: linear-gradient(to bottom right, #0BF, #00ffa9);
-}
+
 .outerCircle {
   width: 500px;
   height: 500px;
@@ -79,34 +74,42 @@ body {
 }
 .title {
   text-align: center;
-  font-size: 69px;
-  font-family: 'Mikado';
-  line-height: 80px;
-  letter-spacing: 4px;
-  color: #aaa;
+  font-size: 120px;
+  font-family: 'Metropolis';
+  line-height: 130px;
+  letter-spacing: 20px;
   transition: 0.4s;
   user-select: none;
+  color: #ea0b59;
+  text-shadow: #f00 0 0 10px;
 }
 .middleContainer {
   top: 1000px;
   width: 80vw;
-  height: 120vh;
-  /* margin-top: 30%; */
 }
 .middleStrip {
   width: 100%;
-  height: calc((100%/5)*2.4);
+  height: calc((120vh/5)*2.4);
   transition: 1s;
 }
 .box {
-  height: 100%;
+  height: calc((120vh/5)*2.4);
   width: calc((120vh/5)*2.4);
   display: flex;
   justify-content: center;
   align-items: center;
   float: left;
 }
-/* .floatLeft {
+.middleTextContainer {
+  float: right;
+  height: 100%;
+  line-height: 100%;
+  width: calc(100% - 120vh/5*2.4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.floatLeft {
   float: left !important;
 }
 .floatRight {
@@ -114,12 +117,12 @@ body {
 }
 .textRight {
   text-align: right !important;
-} */
+}
 .boxBorder {
   width: 80%;
   height: 80%;
   border-radius: 20%;
-  background-color: #fff;
+  background-color: #ea0b59;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,15 +134,7 @@ body {
   height: 90%;
   border-radius: 20%;
 }
-.middleTextContainer {
-  float: right;
-  height: 100%;
-  line-height: 100%;
-  width: calc(100% - 120vh/5*2.4);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+
 .textContainer {
   width: 100%;
 }
@@ -149,7 +144,7 @@ body {
   font-size: 30px;
   font-family: "Ubuntu";
   font-weight: bold;
-  color: white;
+  color: #ea0b59;
 }
 .middleText {
   text-align: left;
