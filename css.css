@@ -6,16 +6,12 @@
   font-family: "Ubuntu";
   src: url('Ubuntu.ttf')
 }
-@media only screen and (max-width: 760px) {
-  .title {
-    font-size: 90px;
-  }
-}
 body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
   height: 400vh;
+  width: 100vw;
   background-color: #111;
 }
 ::-webkit-scrollbar {
@@ -81,7 +77,7 @@ body {
   transition: 0.4s;
   user-select: none;
   color: #ea0b59;
-  text-shadow: #f00 0 0 10px;
+  text-shadow: #f00 0 0 5px;
 }
 .middleContainer {
   top: 1000px;
@@ -145,6 +141,7 @@ body {
   font-family: "Ubuntu";
   font-weight: bold;
   color: #ea0b59;
+  line-height: 35px;
 }
 .middleText {
   text-align: left;

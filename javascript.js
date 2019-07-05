@@ -35,7 +35,8 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
       $('.middleTitle').css('text-align', 'center');
       $('.middleTitle').css('margin-left', '0');
       $('.middleTextContainer').css('float', 'none !important');
-      $('.middleContainer').css('width', 'calc((120vh/5)*2.4)')
+      $('.middleContainer').css('width', 'calc((120vh/5)*2.4)');
+      $('.title').css('font-size', '90px');
 
 
 }
